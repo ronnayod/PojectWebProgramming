@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 02, 2021 at 08:25 AM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.0
+-- Generation Time: Sep 06, 2023 at 09:25 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -36,29 +36,23 @@ CREATE TABLE `tbl_member` (
   `m_tel` varchar(20) NOT NULL,
   `m_address` varchar(200) NOT NULL,
   `date_save` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_member`
 --
 
 INSERT INTO `tbl_member` (`member_id`, `m_user`, `m_pass`, `m_name`, `m_email`, `m_tel`, `m_address`, `date_save`) VALUES
-(1, '111', '111', 'devtai', 'name@hotmail.com', '0897657831', '181 หมู่ 10 ต.โนนสุง อ.บ้านผือ จ.อุดรธานี 41160', '2018-06-16 01:49:48'),
-(2, '222', '222', 'sssss', 'wootlove@gmail.com', '0931294710', '28/38-39 ถนนยิงเป้า ต.สนามจันทร์ \r\nอ.เมือง จ.นครปฐม 73000', '2018-06-16 01:52:55'),
+(1, 'devtai', 'devtai111', 'devtai', 'devtai@hotmail.com', '0897657831', '181 หมู่ 10 ต.โนนสุง อ.บ้านผือ จ.อุดรธานี 41160', '2018-06-16 01:49:48'),
+(2, 'wootlove', 'wootlove212', 'wootlove101', 'wootlove@gmail.com', '0931294710', '28/38-39 ถนนยิงเป้า ต.สนามจันทร์ \r\nอ.เมือง จ.นครปฐม 73000', '2018-06-16 01:52:55'),
 (3, '123', '213', 'waina', 'aaaa@gmail.com', '025837588', '46/148-9 ม.3 ถ.ศรีสมาน ต.บ้านใหม่ \r\nอ.ปากเกร็ด จ.นนทบุรี 11120', '2018-06-16 02:02:30'),
 (5, '456', '654', 'waiyai', 'waiy@gmail.com', '0932419717', '252/1-2 ม.6 ถ.เพชรเกษม ต.บ้านหม้อ \r\nอ.เมือง จ.เพชรบุรี 76000', '2018-06-16 02:12:45'),
 (6, 'bop', '4566', 'bop', 'bop@gmail.com', '0938467809', '18/8 ต.สายนะ อ.เมือง จ.ตรัง', '2018-06-16 02:18:42'),
 (7, '999', '999', 'tbanbi', 'eoom@n.com', '038860799', '109/10-11 ถ.จันทอุดม ต.เชิงเนิน \r\nอ.เมือง จ.ระยอง 21000	', '2018-06-16 02:20:34'),
 (8, '765', '765565656', 'moota', 'aaaa@gmail.com', '0533024504556', '459/98 ถ.เจริญเมือง ต.วัดเกตุ \r\nอ.เมือง จ.เชียงใหม่ 50000', '2018-06-16 02:23:37'),
-(9, '777', '777', 'pod', 'aaa@gmail.com', '0954561234', 'กทม.', '2018-06-16 02:26:55'),
+(9, 'member', 'member123', 'member', 'member@gamil.com', '092593225', '8 หมู่10 ต.น้ำใส อ.น้ำตก จ.เลย 55555', '2018-06-16 02:26:55'),
 (10, '144', '311', 'wiratai', 'boom@m.com', '043324754', '269/64-65 ม.4 ถ.มิตรภาพ \r\nอ.เมือง จ.ขอนแก่น 40000', '2018-06-16 02:29:48'),
-(11, '333', '899', 'sadart', 'roomne@n.com', '044262223', '1982/4-5 ถ.มิตรภาพ ต.ในเมือง \r\nอ.เมือง จ.นครราชสีมา 30000', '2018-06-16 02:31:19'),
-(28, '666', '1', 'gok', 'koll@gmail.com', '0958479631', '84/2 หมู่2 ต.ตำบล อ.อำเภอ จ.กทม 25461', '2021-02-08 12:06:39'),
-(31, '969', '123', 'loop', 'koll@gmail.com', '0958479631', '84/2 หมู่2 ต.ตำบล อ.อำเภอ จ.กทม 25461', '2021-03-24 09:46:21'),
-(73, 'summer', '123', 'summer', 'summer@email.com', '0925861234', '78/9 หมู่5 ต.ระยะ อ.ว่างนะ จ.เลย', '2021-04-20 09:39:15'),
-(75, 'poj', '123', 'poj', 'poj@gmail.com', '0231598656', 'กทม.', '2021-04-20 11:52:44'),
-(76, 'kop', '1234', 'kop', 'kop@gmail.com', '0951236954', 'กทม.', '2021-04-24 16:51:49'),
-(78, 'nine', '1234', 'nineee', 'nineee@gmail.com', '0123456789', 'กทม.', '2021-04-26 03:11:52');
+(11, 'Suchada', 'Suchada123', 'Suchada Poruk', 'Suchada@gmail.com', '0982531121', '35 หมู่5 ', '2023-08-31 12:59:17');
 
 -- --------------------------------------------------------
 
@@ -75,7 +69,7 @@ CREATE TABLE `tbl_product` (
   `datesave` timestamp NOT NULL DEFAULT current_timestamp(),
   `p_price` int(11) NOT NULL,
   `p_stock` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_product`
@@ -283,7 +277,7 @@ INSERT INTO `tbl_product` (`p_id`, `p_name`, `type_id`, `p_detail`, `p_img`, `da
 (6010, 'ตระกร้าผ้า', 6, 'ใส้เสื้อผ้า', 'p_img89400116520210327_152146.jpg', '2021-03-27 08:21:46', 50, 50),
 (6011, 'กระบอกน้ำ', 6, 'ใส่น้ำ', 'p_img63171852820210327_152312.jpg', '2021-03-27 08:23:12', 50, 100),
 (6012, 'ปลั๊กสามตา3ช่อง', 6, 'ไว้พ่วงไฟ', 'p_img181927316420210327_152510.jpg', '2021-03-27 08:25:10', 80, 50),
-(6013, 'ปลั๊กสามตา6ช่อง', 6, 'พ่วงไฟฟ้า', 'p_img61169359320210327_152602.jpg', '2021-03-27 08:26:02', 130, 50);
+(6013, 'ปลั๊กสามตา6ช่อง', 1, 'พ่วงไฟฟ้า             ', 'p_img61169359320210327_152602.jpg', '2021-03-27 08:26:02', 130, 50);
 
 -- --------------------------------------------------------
 
@@ -293,8 +287,8 @@ INSERT INTO `tbl_product` (`p_id`, `p_name`, `type_id`, `p_detail`, `p_img`, `da
 
 CREATE TABLE `tbl_type` (
   `type_id` int(11) NOT NULL,
-  `type_name` varchar(100) CHARACTER SET utf8mb4 NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `type_name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Dumping data for table `tbl_type`
@@ -306,9 +300,7 @@ INSERT INTO `tbl_type` (`type_id`, `type_name`) VALUES
 (3, 'อุปกรณ์ช่าง'),
 (4, 'ของใช้ครัวเรือน'),
 (5, 'อุปกรณ์อิเล็กทรอนิกส์'),
-(6, 'อุปกรณ์ทั่วไป'),
-(26, 'cat'),
-(28, 'aa');
+(6, 'อุปกรณ์ทั่วไป');
 
 -- --------------------------------------------------------
 
@@ -328,19 +320,10 @@ CREATE TABLE `tb_order` (
 --
 
 INSERT INTO `tb_order` (`member_id`, `order_id`, `p_qty`, `order_date`) VALUES
-(31, 1134308159, 1, '2021-04-19 18:03:23'),
-(31, 152786461, 1, '2021-04-19 18:00:31'),
-(40, 240766315, 1, '2021-04-19 19:25:39'),
-(31, 1612135321, 1, '2021-04-20 04:34:53'),
-(75, 369629361, 1, '2021-04-20 14:02:27'),
-(75, 173967489, 1, '2021-04-20 14:02:46'),
-(75, 1439539924, 1, '2021-04-20 14:03:40'),
-(75, 22172868, 1, '2021-04-20 14:06:27'),
-(9, 1732446512, 1, '2021-04-22 09:20:39'),
-(9, 1313724921, 1, '2021-04-24 16:49:48'),
-(78, 1307580815, 1, '2021-04-26 03:12:47'),
-(78, 899743091, 1, '2021-04-26 03:13:45'),
-(9, 1035901954, 1, '2021-04-29 11:23:29');
+(1, 64, 1, '2023-08-31 14:30:25'),
+(9, 65, 0, '2023-09-01 14:15:30'),
+(9, 66, 0, '2023-09-01 15:38:02'),
+(9, 67, 0, '2023-09-02 05:09:53');
 
 -- --------------------------------------------------------
 
@@ -386,7 +369,18 @@ INSERT INTO `tb_order_detail` (`d_id`, `order_id`, `p_id`, `p_qty`, `total`) VAL
 (30, 1307580815, 4038, 2, 80),
 (31, 899743091, 5026, 1, 450),
 (32, 899743091, 4037, 1, 40),
-(33, 1035901954, 5001, 1, 35);
+(33, 1035901954, 5001, 1, 35),
+(34, 1693487332, 6003, 10, 1500),
+(35, 1693487454, 5029, 8, 2400),
+(36, 64, 5037, 1, 1500),
+(37, 64, 5037, 1, 1500),
+(38, 64, 5037, 1, 1500),
+(39, 64, 5037, 1, 1500),
+(40, 65, 5006, 1, 600),
+(41, 65, 4055, 1, 25),
+(42, 66, 1001, 1, 550),
+(43, 66, 3017, 10, 250),
+(44, 67, 4020, 1, 150);
 
 --
 -- Indexes for dumped tables
@@ -430,13 +424,13 @@ ALTER TABLE `tb_order_detail`
 -- AUTO_INCREMENT for table `tbl_member`
 --
 ALTER TABLE `tbl_member`
-  MODIFY `member_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
+  MODIFY `member_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 
 --
 -- AUTO_INCREMENT for table `tbl_product`
 --
 ALTER TABLE `tbl_product`
-  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6016;
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6017;
 
 --
 -- AUTO_INCREMENT for table `tbl_type`
@@ -445,10 +439,16 @@ ALTER TABLE `tbl_type`
   MODIFY `type_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
+-- AUTO_INCREMENT for table `tb_order`
+--
+ALTER TABLE `tb_order`
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+
+--
 -- AUTO_INCREMENT for table `tb_order_detail`
 --
 ALTER TABLE `tb_order_detail`
-  MODIFY `d_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `d_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
